@@ -1,21 +1,21 @@
 # Multi-stage build for React app with nginx
-FROM node:18-alpine as build
+FROM node:18-alpine AS build
 
 # Set working directory
 WORKDIR /app
 
-# Copy package files
+# Copy package files first for better caching
 COPY package*.json ./
 COPY bun.lockb ./
 
-# Install dependencies
-RUN npm ci --only=production
+# Install dependencies (including devDependencies for build)
+RUN npm ci --verbose
 
 # Copy source code
 COPY . .
 
-# Build the application
-RUN npm run build
+# Verify vite is available and build the application
+RUN npx vite --version && npm run build
 
 # Production stage with nginx
 FROM nginx:alpine
