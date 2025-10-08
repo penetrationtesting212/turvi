@@ -1,0 +1,61 @@
+project_id = "renocmwzuhzwasldvddc"
+
+[functions.rewrite-content]
+verify_jwt = true
+
+[functions.optimize-seo]
+verify_jwt = true
+
+[functions.check-grammar]
+verify_jwt = true
+
+[functions.keyword-research]
+verify_jwt = true
+
+[functions.competitor-analysis]
+verify_jwt = true
+
+[functions.hashtag-generator]
+verify_jwt = true
+
+[functions.content-scoring]
+verify_jwt = true
+
+[functions.brand-voice-checker]
+verify_jwt = true
+
+[functions.plagiarism-checker]
+verify_jwt = true
+
+[functions.readability-score]
+verify_jwt = true
+
+[functions.tone-adjuster]
+verify_jwt = true
+
+[functions.content-expansion]
+verify_jwt = true
+
+[functions.smart-summarizer]
+verify_jwt = true
+
+[functions.headline-generator]
+verify_jwt = true
+
+[functions.cta-optimizer]
+verify_jwt = true
+
+[functions.generate-video-script]
+verify_jwt = true
+
+[functions.predict-content-trends]
+verify_jwt = true
+
+[functions.score-leads]
+verify_jwt = true
+
+[functions.generate-followup-sequence]
+verify_jwt = true
+
+[functions.create-ai-campaign]
+verify_jwt = true
